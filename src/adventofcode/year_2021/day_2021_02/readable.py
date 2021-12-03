@@ -3,19 +3,18 @@
 # Any comments? Find me on:
 #    - Twitter: @gansanay
 #    - LinkedIn: https://linkedin.com/in/gansanay
-from adventofcode.util.input_helpers import get_input_for_day
+from adventofcode.util.input_helpers import get_input_for_day_as_str
 
 commands = list()
-with open(get_input_for_day(2021, 2), "r", encoding="utf-8") as f:
-    for line in f.read().splitlines():
-        c, v = line.split(" ")
-        # ups and downs are just doing the same thing with opposite signs
-        if c == "up":
-            commands.append(["updown", -int(v)])
-        elif c == "down":
-            commands.append(["updown", int(v)])
-        else:
-            commands.append([c, int(v)])
+for line in get_input_for_day_as_str(2021, 2).splitlines():
+    c, v = line.split(" ")
+    # ups and downs are just doing the same thing with opposite signs
+    if c == "up":
+        commands.append(["updown", -int(v)])
+    elif c == "down":
+        commands.append(["updown", int(v)])
+    else:
+        commands.append([c, int(v)])
 
 
 class Submarine(object):
