@@ -1,7 +1,5 @@
-import pytest
-
-from adventofcode.util.input_helpers import get_input_for_day
 from adventofcode.year_2021.day_2021_03 import readable, short
+
 
 def test_readable_part_one():
     answer = readable.part1()
