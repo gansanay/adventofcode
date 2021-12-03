@@ -1,4 +1,5 @@
 # Advent of Code
+[![codecov](https://codecov.io/gh/gansanay/adventofcode/branch/main/graph/badge.svg?token=DXUOP0J9E1)](https://codecov.io/gh/gansanay/adventofcode)
 
 This repository contains different flavors of code for the [Advent of Code](https://adventofcode.com/) challenge.
 
