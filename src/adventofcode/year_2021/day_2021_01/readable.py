@@ -5,6 +5,8 @@
 #    - LinkedIn: https://linkedin.com/in/gansanay
 import numpy as np
 
+from adventofcode.util.input_helpers import get_input_for_day
+
 
 def diff(x):
     """Differences between subsequent values of a numpy.array"""
@@ -21,15 +23,20 @@ def rolling_sum(x, n):
     return np.convolve(x, np.ones(n), "valid")
 
 
-lengths = np.loadtxt("aoc_input_01.txt")
+lengths = np.loadtxt(get_input_for_day(2021, 1))
 
-# Part 1
-length_diffs = diff(lengths)
-part1 = count_pos(length_diffs)
-print(f"Solution for part 1: {part1}")
 
-# Part 2
-by_three = rolling_sum(lengths, 3)
-by_three_diffs = diff(by_three)
-part2 = count_pos(by_three_diffs)
-print(f"Solution for part 2: {part2}")
+def part1():
+    length_diffs = diff(lengths)
+    return count_pos(length_diffs)
+
+
+def part2():
+    by_three = rolling_sum(lengths, 3)
+    by_three_diffs = diff(by_three)
+    return count_pos(by_three_diffs)
+
+
+if __name__ == "__main__":
+    print(f"Solution for part 1: {part1()}")
+    print(f"Solution for part 2: {part2()}")

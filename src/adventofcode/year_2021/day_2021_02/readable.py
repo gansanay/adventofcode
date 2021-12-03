@@ -3,9 +3,10 @@
 # Any comments? Find me on:
 #    - Twitter: @gansanay
 #    - LinkedIn: https://linkedin.com/in/gansanay
+from adventofcode.util.input_helpers import get_input_for_day
 
 commands = list()
-with open("aoc_input_02.txt", "r", encoding="utf-8") as f:
+with open(get_input_for_day(2021, 2), "r", encoding="utf-8") as f:
     for line in f.read().splitlines():
         c, v = line.split(" ")
         # ups and downs are just doing the same thing with opposite signs
@@ -80,11 +81,16 @@ def part1():
     s = SubmarineWithoutAim()
     for c, v in commands:
         s.move(c, v)
-    print(f"Solution for part 1: {s.answer()}")
+    return s.answer()
 
 
 def part2():
     s = SubmarineWithAim()
     for c, v in commands:
         s.move(c, v)
-    print(f"Solution for part 2: {s.answer()}")
+    return s.answer()
+
+
+if __name__ == "__main__":
+    print(f"Solution for part 1: {part1()}")
+    print(f"Solution for part 2: {part2()}")
