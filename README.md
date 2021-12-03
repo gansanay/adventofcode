@@ -1,4 +1,4 @@
-# Advent of Code
+# 🎄 Advent of Code
 [![Tests](https://github.com/gansanay/adventofcode/actions/workflows/tests.yaml/badge.svg)](https://github.com/gansanay/adventofcode/actions/workflows/tests.yaml)
 [![codecov](https://codecov.io/gh/gansanay/adventofcode/branch/main/graph/badge.svg?token=DXUOP0J9E1)](https://codecov.io/gh/gansanay/adventofcode)
 
