@@ -1,4 +1,4 @@
-# Advent of Code 2021, Day 03
+# Advent of Code 2021, Day 04
 # Attempting to share small, instructive, PEP8-compliant solutions!
 # Any comments? Find me on:
 #    - Twitter: @gansanay
