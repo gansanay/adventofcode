@@ -17,7 +17,7 @@ for line in get_input_for_day_as_str(2021, 2).splitlines():
         commands.append([c, int(v)])
 
 
-class Submarine(object):
+class Submarine:
     """Abstraction for a submarine
 
     It's only defined by its original position and how we compute the answer.

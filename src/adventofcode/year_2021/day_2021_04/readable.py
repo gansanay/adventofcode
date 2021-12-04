@@ -8,7 +8,7 @@ import numpy as np
 from adventofcode.util.input_helpers import get_input_for_day_as_str
 
 
-class Board(object):
+class Board:
     """A Bingo board to play with the giant squid around the submarine
 
     Args:
@@ -48,7 +48,7 @@ class Board(object):
         return self.unmarked_sum() * self.latest_hit
 
 
-class Game(object):
+class Game:
     """A game of Bingo"""
 
     def __init__(self):
