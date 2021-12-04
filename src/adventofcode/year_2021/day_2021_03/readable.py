@@ -7,7 +7,7 @@ import numpy as np
 
 from adventofcode.util.input_helpers import get_input_for_day
 
-data = np.loadtxt(get_input_for_day(2021, 3), dtype='str')
+data = np.loadtxt(get_input_for_day(2021, 3), dtype="str")
 matrix = np.array([list(e) for e in data]).astype(int)
 
 
@@ -38,14 +38,14 @@ def consumption_rate(m, rate):
         ones_count = m[:, i].sum()
         zeros_count = m.shape[0] - ones_count
 
-        # TRUTH TABLE 
+        # TRUTH TABLE
         #            +-----------------+-----------------+
         #            | rate != 'gamma' | rate == 'gamma' |
         # +----------+-----------------+-----------------+
         # | 1s >= 0s |               1 |               0 |
         # | 1s < 0s  |               0 |               1 |
         # +----------+-----------------+-----------------+
-        if (ones_count > zeros_count) == (rate == 'gamma'):
+        if (ones_count > zeros_count) == (rate == "gamma"):
             gammas.append(1)
         else:
             gammas.append(0)
@@ -66,7 +66,7 @@ def rating(m, molecule):
     remaining = m.copy()
     for i in range(m.shape[1]):
         ones_count = remaining[:, i].sum()
-        zeros_count = remaining.shape[0]-ones_count
+        zeros_count = remaining.shape[0] - ones_count
 
         #            +-------------------+------------------+
         #            | molecule == 'co2' | molecule == 'o2' |
@@ -74,20 +74,20 @@ def rating(m, molecule):
         # | 1s >= 0s |                 1 |                0 |
         # | 1s < 0s  |                 0 |                1 |
         # +----------+-------------------+------------------+
-        e = int((ones_count >= zeros_count) == (molecule == 'o2'))
+        e = int((ones_count >= zeros_count) == (molecule == "o2"))
         remaining = remaining[np.where(remaining[:, i] == e)]
         if len(remaining) == 1:
             return int_from_bin_list(remaining[0])
 
 
 def part1():
-    return consumption_rate(matrix, 'gamma') * consumption_rate(matrix, 'epsilon')
+    return consumption_rate(matrix, "gamma") * consumption_rate(matrix, "epsilon")
 
 
 def part2():
-    return rating(matrix, 'o2') * rating(matrix, 'co2')
+    return rating(matrix, "o2") * rating(matrix, "co2")
 
 
-if __name__ == '__main__':
-    print(f'Solution for part 1: {part1()}')
-    print(f'Solution for part 2: {part2()}')
+if __name__ == "__main__":
+    print(f"Solution for part 1: {part1()}")
+    print(f"Solution for part 2: {part2()}")
