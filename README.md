@@ -16,11 +16,11 @@ This repository contains different flavors of Python 3 code for the [Advent of C
 
 - [x] [pre-commit](https://pre-commit.com/) configuration
 - [x] tests passing
-- [] 100% of code covered by tests
+- [ ] 100% of code covered by tests
 - [x] flake8 static analysis
-- [] mypy type checking
-- [] performance counters for each implementation (particularly for `uppingtheante` ones)
-- [] [sphinx](https://www.sphinx-doc.org/en/master/) documentation
-- [] ... with explanations of problem solving approach for each challenge
+- [ ] mypy type checking
+- [ ] performance counters for each implementation (particularly for `uppingtheante` ones)
+- [ ] [sphinx](https://www.sphinx-doc.org/en/master/) documentation
+- [ ] ... with explanations of problem solving approach for each challenge
 
 The package structure is copied from the awesome work by [Marcel Blijleven](https://github.com/marcelblijleven) in [his own Advent of Code repository](https://github.com/marcelblijleven/adventofcode).
