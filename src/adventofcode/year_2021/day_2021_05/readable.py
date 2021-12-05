@@ -42,8 +42,8 @@ class Board:
         self.limits = limits
         self.board = np.zeros((limits[0], limits[1]), dtype=int)
 
-    def draw_line(self, l):
-        for location in l.line:
+    def draw_line(self, line):
+        for location in line.line:
             self.board[location[0], location[1]] += 1
 
     def overlaps(self):
@@ -54,13 +54,13 @@ def part1():
     board = Board((1 + xmax, 1 + ymax))
     for seg in segments:
         if seg[0, 0] == seg[1, 0] or seg[0, 1] == seg[1, 1]:
-            l = StraightLine(seg)
-            board.draw_line(l)
+            line = StraightLine(seg)
+            board.draw_line(line)
     return board.overlaps()
 
 
 def part2():
-    board = Board((1 + 990, 1 + 990))
+    board = Board((1 + xmax, 1 + ymax))
     for seg in segments:
         line = None
         if seg[0, 0] == seg[1, 0] or seg[0, 1] == seg[1, 1]:
