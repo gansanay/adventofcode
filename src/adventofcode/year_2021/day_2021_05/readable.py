@@ -69,3 +69,8 @@ def part2():
             line = DiagonalLine(seg)
         board.draw_line(line)
     return board.overlaps()
+
+
+if __name__ == "__main__":
+    print(f"Solution for part 1: {part1()}")
+    print(f"Solution for part 2: {part2()}")
