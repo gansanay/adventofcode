@@ -10,6 +10,8 @@ Welcome to adventofcode's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   year_2021
+
 
 
 Indices and tables
