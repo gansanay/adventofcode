@@ -10,8 +10,6 @@ Welcome to adventofcode's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   _autogen/*
-
 
 Indices and tables
 ==================
