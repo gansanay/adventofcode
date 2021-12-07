@@ -16,23 +16,6 @@ import sys
 # sys.path.insert(0, os.path.abspath('.'))
 sys.path.insert(0, os.path.abspath("../../src/adventofcode"))
 
-import sphinx.apidoc
-
-
-def setup(app):
-    sphinx.apidoc.main(
-        [
-            "-f",  # Overwrite existing files
-            "-T",  # Create table of contents
-            #'-e', #Give modules their own pages
-            "-E",  # user docstring headers
-            #'-M', #Modules first
-            "-o",  # Output the files to:
-            "./source/_autogen/",  # Output Directory
-            "./../arteryfe",  # Main Module directory
-        ]
-    )
-
 
 # -- Project information -----------------------------------------------------
 
@@ -68,3 +51,5 @@ html_theme = "sphinx_rtd_theme"
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
+
+autoapi_dirs = ["../../src/adventofcode"]
