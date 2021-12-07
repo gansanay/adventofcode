@@ -53,3 +53,5 @@ html_theme = "sphinx_rtd_theme"
 html_static_path = ["_static"]
 
 autoapi_dirs = ["../../src/adventofcode"]
+autoapi_type = "python"
+# autoapi_dirs = ['path/to/source/files', 'src']
