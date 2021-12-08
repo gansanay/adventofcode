@@ -24,8 +24,8 @@ masks = [
     [True, False, True, True, True, True, True],  # 6
     [True, True, True, False, False, False, False],  # 7
     [True, True, True, True, True, True, True],  # 8
-    [True, True, True, True, False, True, True],
-]  # 9
+    [True, True, True, True, False, True, True],  # 9
+]
 
 
 def wordset(encoding):
@@ -45,7 +45,7 @@ all_wordsets = dict(zip([wordset(p) for p in permuts], ["".join(p) for p in perm
 
 
 def get_encoding(input_line):
-    """O(log n) search for the possible encoding"""
+    """O(log n) search for the correct encoding among the 7! = 5040 permutations"""
     encoding = None
     possible_wordsets = list(all_wordsets.keys()).copy()
     for s in input_line:
