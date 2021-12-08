@@ -25,3 +25,8 @@ def part2():
     # use the minimum fuel consumption between the two adjacent integers
     m = np.mean(data)
     return min((fuel_cumulative(np.floor(m)), fuel_cumulative(np.ceil(m))))
+
+
+if __name__ == "__main__":
+    print(f"Solution for part 1: {part1()}")
+    print(f"Solution for part 2: {part2()}")
