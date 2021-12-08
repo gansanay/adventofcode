@@ -5,11 +5,11 @@ Advent of Code 2021
    :maxdepth: 2
    :caption: Contents:
 
-   autoapi/adventofcode/year_2021/day_2021_01
-   autoapi/adventofcode/year_2021/day_2021_02
-   autoapi/adventofcode/year_2021/day_2021_03
-   autoapi/adventofcode/year_2021/day_2021_04
-   autoapi/adventofcode/year_2021/day_2021_05
-   autoapi/adventofcode/year_2021/day_2021_06
-   autoapi/adventofcode/year_2021/day_2021_07
-   autoapi/adventofcode/year_2021/day_2021_08
+   autoapi/adventofcode/year_2021/day_2021_01/readable/index
+   autoapi/adventofcode/year_2021/day_2021_02/readable/index
+   autoapi/adventofcode/year_2021/day_2021_03/readable/index
+   autoapi/adventofcode/year_2021/day_2021_04/readable/index
+   autoapi/adventofcode/year_2021/day_2021_05/readable/index
+   autoapi/adventofcode/year_2021/day_2021_06/readable/index
+   autoapi/adventofcode/year_2021/day_2021_07/readable/index
+   autoapi/adventofcode/year_2021/day_2021_08/readable/index
