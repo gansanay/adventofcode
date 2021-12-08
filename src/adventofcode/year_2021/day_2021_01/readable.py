@@ -1,8 +1,4 @@
-# Advent of Code 2021, Day 01
-# Attempting to share small, instructive, PEP8-compliant solutions!
-# Any comments? Find me on:
-#    - Twitter: @gansanay
-#    - LinkedIn: https://linkedin.com/in/gansanay
+"""Advent of Code 2021, Day 1"""
 import numpy as np
 
 from adventofcode.util.input_helpers import get_input_for_day
