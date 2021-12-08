@@ -10,6 +10,7 @@ Welcome to adventofcode's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   2021
 
 Indices and tables
 ==================
