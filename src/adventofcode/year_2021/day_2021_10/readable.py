@@ -36,14 +36,24 @@ def check(inp):
         return ["Incomplete", autocomplete]
 
 
-penalty = 0
-autocomplete = list()
-for line in data:
-    # print(line)
-    r, p = check(line)
-    if r == "Illegal":
-        penalty += p
-    elif r == "Incomplete":
-        autocomplete.append(p)
-print("Part 1:", penalty)
-print("Part 2:", int(np.median(autocomplete)))
+def part1():
+    penalty = 0
+    for line in data:
+        r, p = check(line)
+        if r == "Illegal":
+            penalty += p
+    return penalty
+
+
+def part2():
+    autocomplete = list()
+    for line in data:
+        r, p = check(line)
+        if r == "Incomplete":
+            autocomplete.append(p)
+    return int(np.median(autocomplete))
+
+
+if __name__ == "__main__":
+    print(f"Solution for part 1: {part1()}")
+    print(f"Solution for part 2: {part2()}")
