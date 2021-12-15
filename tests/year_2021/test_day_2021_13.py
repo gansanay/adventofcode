@@ -1,5 +1,3 @@
-import numpy as np
-
 from adventofcode.year_2021.day_2021_13 import readable
 
 

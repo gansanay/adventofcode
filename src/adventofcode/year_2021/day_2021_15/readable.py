@@ -76,7 +76,7 @@ def part2():
     larger_data[:n, :p] = data
     for row in range(1, 5):
         larger_data[row * n : (row + 1) * n, :p] = plus_one_mod_nine(
-            larger_data[(row - 1) * n : (row) * n, :p]
+            larger_data[(row - 1) * n : row * n, :p]
         )
     for col in range(1, 5):
         larger_data[:, col * p : (col + 1) * p] = plus_one_mod_nine(
