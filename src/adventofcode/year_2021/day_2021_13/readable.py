@@ -50,3 +50,8 @@ def part2():
     for axis, pos in folds:
         p.fold(axis, pos)
     return p.folds[-1].astype(int)
+
+
+if __name__ == "__main__":
+    print(f"Solution for part 1: {part1()}")
+    print(f"Solution for part 2: {part2()}")
